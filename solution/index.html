@@ -1,0 +1,80 @@
+<html>
+  <head>
+     <script src="lib/drawing.js"></script>
+     <script src="lib/chaos.js"></script>
+
+     <script>
+        class TrafficLight {
+          
+          constructor() {
+            this.box = new Rectangle();
+            this.lampTop = new Circle();
+            this.lampMid = new Circle();
+            this.lampBot = new Circle();
+            
+            this.box.setPosition(0,0);
+            this.box.setWidth(20);
+            this.box.setHeight(60);
+            this.box.setColor("black");
+            
+            this.lampTop.setPosition(10,10);
+            this.lampTop.setRadius(10);
+            this.lampTop.setColor("red");
+            
+            this.lampMid.setPosition(10,30);
+            this.lampMid.setRadius(10);
+            this.lampMid.setColor("yellow");
+
+            this.lampBot.setPosition(10,50);
+            this.lampBot.setRadius(10);
+            this.lampBot.setColor("green");
+          }
+          
+          setPosition(x,y) {
+            this.box.setPosition(x,y);
+            this.lampTop.setPosition(x+10,y+10);
+            this.lampMid.setPosition(x+10,y+30);
+            this.lampBot.setPosition(x+10,y+50);
+          }
+          
+          off() {
+            this.lampTop.setColor("black");
+            this.lampMid.setColor("black");
+            this.lampBot.setColor("black");  
+          }
+          
+          
+          green() {
+            this.lampTop.setColor("black");
+            this.lampMid.setColor("black");
+            this.lampBot.setColor("green");  
+          }
+          
+          yellow() {
+            this.lampTop.setColor("black");
+            this.lampMid.setColor("yellow");
+            this.lampBot.setColor("black");  
+          }
+          
+          red() {
+            this.lampTop.setColor("red");
+            this.lampMid.setColor("black");
+            this.lampBot.setColor("black");  
+          }
+          
+         redyellow() {
+            this.lampTop.setColor("red");
+            this.lampMid.setColor("yellow");
+            this.lampBot.setColor("black");  
+          }
+          
+        }
+
+          
+      </script>
+  </head>
+  
+  <body>
+    
+  </body>
+</html>
