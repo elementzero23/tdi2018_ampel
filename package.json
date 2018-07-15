@@ -1,0 +1,24 @@
+{
+  "name": "tdi2018_ampel__w_electron",
+  "version": "0.1.0",
+  "description": "electron wrapper for educational development environment",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elementzero23/tdi2018_ampel.git"
+  },
+  "keywords": [
+    "javascript",
+    "education",
+    "electron"
+  ],
+  "author": "christopher wagner",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elementzero23/tdi2018_ampel/issues"
+  },
+  "homepage": "https://github.com/elementzero23/tdi2018_ampel#readme"
+}
